@@ -1,6 +1,6 @@
 # README
 
-## Getting started
+## 'Gluten-Free For Me' (phase 2 passion project) improved with Ruby on Rails
 
 Clone the repo and then install the needed gems
 
