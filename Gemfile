@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'haml', '~> 4.0', '>= 4.0.7'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
