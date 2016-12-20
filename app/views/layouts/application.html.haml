@@ -1,0 +1,22 @@
+!!! 5
+%html
+%head
+  %title Gluten-Free For Me
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  = csrf_meta_tags
+
+%body
+  %nav.navbar.navbar-default
+    .container
+      .navbar-brand= link_to "Gluten-Free For Me", root_path
+
+      %ul.nav.navbar-nav.navbar-right
+        %li= link_to "Recipe", new_recipe_path
+        %li= link_to "Sign Out", root_path
+
+  .container
+    - flash.each do |name, msg|
+      = content_tag :div, msg, class: "alert"
+
+    = yield
